@@ -1,0 +1,11 @@
+sigBeatIn.fd = 15;
+sigBeatIn.fc = 735;
+sigBeatIn.phic = 0;
+sigBeatIn.phid = pi/4;
+sigBeatIn.t1 = 0;
+sigBeatIn.t2 = 2.2;
+sigBeatIn.fs = 8000;
+sigBeatIn.Amp = 10;
+sigBeatSum = sum2BeatStruct(sigBeatIn);
+figure(1);
+plot(sigBeatSum.times,sigBeatSum.values);
