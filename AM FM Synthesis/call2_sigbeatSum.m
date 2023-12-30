@@ -1,0 +1,17 @@
+note.fd = 30;
+note.fc = 800;
+note.phic = 0;
+note.phid = pi/4;
+note.t1 = 0;
+note.t2 = 4.04;
+note.fs = 8000;
+note.Amp = 50;
+testingBeat = sum2BeatStruct(note);
+figure(1);
+plot(testingBeat.times,testingBeat.values);
+xlabel('Time (s)'); ylabel('x(t)');
+title('Signal from t = 0s to t = 4.04s (Entire Duration');
+figure(2);
+plot(testingBeat.times(100:700),testingBeat.values(100:700));
+xlabel('Time (s)'); ylabel('x(t)');
+title('Signal for Short Duration');
